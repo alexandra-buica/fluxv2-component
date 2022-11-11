@@ -1,0 +1,39 @@
+sourceController:
+  enabled: true
+  deploymentName: fluxv2-source-controller
+  image:
+    repository: fluxcd
+    name: source-controller
+    tag: v0.21.2
+
+helmController:
+  enabled: true
+  deploymentName: fluxv2-helm-controller
+  image:
+    repository: fluxcd
+    name: helm-controller
+    tag: v0.16.0
+
+kustomizeController:
+  enabled: false
+  deploymentName: fluxv2-kustomize-controller
+  image:
+    repository: fluxcd
+    name: kustomize-controller
+    tag: v0.16.0
+
+imageReflectorController:
+  enabled: false
+  deploymentName: fluxv2-image-controller
+  image:
+    repository: fluxcd
+    name: image-reflector-controller
+    tag: v0.13.0
+
+automationController:
+  enabled: false
+  deploymentName: fluxv2-automation-controller
+  image:
+    repository: fluxcd
+    name: image-automation-controller
+    tag: v0.17.0
