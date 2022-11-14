@@ -1,4 +1,0 @@
-apiVersion: v1
-name: wordpress-fluxv2
-version: 0.0.1
-description: This is the wordpress helm chart used to deploy fluxv2
